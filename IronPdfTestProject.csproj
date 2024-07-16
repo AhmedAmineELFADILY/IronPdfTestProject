@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsetting.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsetting.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IronPdf" Version="2024.7.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Services.NuGet.CredentialProvider" Version="0.37.0" />
+  </ItemGroup>
+
+</Project>
